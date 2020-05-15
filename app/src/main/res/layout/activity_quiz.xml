@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".QuizActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/q_1_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/q_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_corners_white"
+                        android:padding="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/question_1" />
+                </FrameLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/q_1_frame">
+
+                    <RadioButton
+                        style="@style/Radio_button_style"
+                        android:text="@string/q_1_option_1" />
+
+                    <RadioButton
+                        style="@style/Radio_button_style"
+                        android:text="@string/q_1_option_2" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_1"
+                        style="@style/Radio_button_style"
+                        android:onClick="radioBtn1Click"
+                        android:text="@string/q_1_option_3" />
+
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/q_2_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/q_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_corners_white"
+                        android:padding="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/question_2" />
+                </FrameLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/q_2_frame">
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_2"
+                        style="@style/Radio_button_style"
+                        android:onClick="radioBtn2Click"
+                        android:text="@string/q_2_option_1" />
+
+                    <RadioButton
+                        style="@style/Radio_button_style"
+                        android:text="@string/q_2_option_2" />
+
+                    <RadioButton
+                        style="@style/Radio_button_style"
+                        android:text="@string/q_2_option_3" />
+
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/q_3_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/q_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_corners_white"
+                        android:padding="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/question_3" />
+                </FrameLayout>
+
+                <EditText
+                    android:id="@+id/question_3_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Number"
+                    android:inputType="numberDecimal"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/q_3_frame" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/q_4_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/q_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_corners_white"
+                        android:padding="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/question_4" />
+                </FrameLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_grp_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/q_4_frame">
+
+                    <RadioButton
+                        style="@style/Radio_button_style"
+                        android:text="@string/q_4_option_1" />
+
+                    <RadioButton
+                        android:id="@+id/radio_btn_4"
+                        style="@style/Radio_button_style"
+                        android:onClick="radioBtn4Click"
+                        android:text="@string/q_4_option_2" />
+
+                    <RadioButton
+                        style="@style/Radio_button_style"
+                        android:text="@string/q_4_option_3" />
+
+                </RadioGroup>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/q_5_frame"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:background="@color/colorPrimary"
+                    app:layout_constraintBaseline_toBaselineOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+                    <TextView
+                        android:id="@+id/q_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/rounded_corners_white"
+                        android:padding="10dp"
+                        android:paddingLeft="20dp"
+                        android:paddingRight="20dp"
+                        android:text="@string/question_5" />
+                </FrameLayout>
+
+                <CheckBox
+                    android:id="@+id/checkBox_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="checkBoxScoreCount"
+                    android:text="@string/q_5_option_1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/q_5_frame" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="checkBoxScoreCount"
+                    android:text="@string/q_5_option_2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBox_1" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:onClick="checkBoxScoreCount"
+                    android:text="@string/q_5_option_3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/checkBox_2" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/rounded_corners"
+                android:onClick="calculateScore"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                android:text="Submit"
+                android:textColor="@android:color/white"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

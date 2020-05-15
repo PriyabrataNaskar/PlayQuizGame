@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Play Quiz Game</string>
+
+    <string name="question_1">What is the radius of Earth?</string>
+    <string name="q_1_option_1">6500 km</string>
+    <string name="q_1_option_2">6000 km</string>
+    <string name="q_1_option_3">6371 km</string>
+
+    <string name="question_2">What is the biggest country in terms of population</string>
+
+    <string name="q_2_option_1">China</string>
+    <string name="q_2_option_2">India</string>
+    <string name="q_2_option_3">USA</string>
+
+    <string name="question_3">Number of continents in the world</string>
+    <string name="q_3_option_1">2</string>
+    <string name="q_3_option_2">7</string>
+    <string name="q_3_option_3">5</string>
+
+    <string name="question_4">World environment day is celebrated on</string>
+    <string name="q_4_option_1">6-th June</string>
+    <string name="q_4_option_2">5-th June</string>
+    <string name="q_4_option_3">8-th June</string>
+
+    <string name="question_5">Name of our galaxy and Solar System are</string>
+    <string name="q_5_option_1">Sun</string>
+    <string name="q_5_option_2">Milky Way</string>
+    <string name="q_5_option_3">Moon</string>
+</resources>
